@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Evidence placeholder diagonal stripe pattern */
+.evidence-placeholder-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #f1f5f9,
+    #f1f5f9 6px,
+    #e2e8f0 6px,
+    #e2e8f0 12px
+  );
+}
+
+/* Subtle 3s row highlight for guided call mode */
+@keyframes rowHighlightFade {
+  0% {
+    background-color: #dbeafe;
+  }
+  70% {
+    background-color: #eff6ff;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.guided-highlight {
+  animation: rowHighlightFade 3s ease-out forwards;
+}

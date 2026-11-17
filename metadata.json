@@ -1,0 +1,6 @@
+{
+  "name": "Lane Controller - LPU Simulation",
+  "description": "Frontend-only simulation of an MLFF tolling Lane Controller (LPU) demonstrating raw device event fusion, matching windows, Request Tag lookups, health degradation, and plaza link buffering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
